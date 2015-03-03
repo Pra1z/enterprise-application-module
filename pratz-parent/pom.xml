@@ -27,4 +27,8 @@
         </dependency>
     </dependencies>
 </dependencyManagement>
+   
+    <modules>
+    	<module>../pratz-mvc</module>
+    </modules>
 </project>
