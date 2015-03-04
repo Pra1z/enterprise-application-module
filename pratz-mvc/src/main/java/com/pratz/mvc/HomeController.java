@@ -12,7 +12,7 @@ public class HomeController extends AbstractController {
 
 	@RequestMapping(value = {"/"}, method = RequestMethod.GET)
 	public String home(Model model) {
-		logger.info("Home Controller");
+		logger.debug("Home Controller");
 		return "home";
 	}
 	
