@@ -13,7 +13,6 @@
 		<module>../pratz-mvc</module>
 	</modules>
 
-
 	<properties>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<maven.compiler.source>1.8</maven.compiler.source>
@@ -35,6 +34,7 @@
 			<url>http://repo.maven.apache.org/maven2</url>
 		</repository>
 	</repositories>
+
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -46,6 +46,7 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
+
 	<build>
 		<extensions>
 			<extension>
@@ -87,7 +88,6 @@
 							<Built-By>pratz</Built-By>
 						</manifestEntries>
 					</archive>
-
 					<excludes>
 						<exclude>**/*.hta</exclude>
 						<exclude>**/generator-input-*.txt</exclude>
@@ -221,7 +221,5 @@
 			</plugin>
 		</plugins>
 	</build>
-
-
 
 </project>
