@@ -1,8 +1,7 @@
 package com.pratz.dao.table.mapper;
 
 import com.pratz.dao.table.model.TMsFunction;
-import java.util.List;
-import org.apache.ibatis.annotations.Param;
+
 
 public interface TMsFunctionMapper {
     /**
