@@ -21,6 +21,17 @@
 	<artifactId>commons-dbcp</artifactId>
 	<version>1.4</version>
 </dependency>
+
+	<dependency>
+		<groupId>com.pratz</groupId>
+		<artifactId>pratz-logic</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</dependency>
+	<dependency>
+		<groupId>com.pratz</groupId>
+		<artifactId>pratz-dao</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</dependency>
 		<!-- Spring Web MVC -->
 		<dependency>
 			<groupId>org.springframework</groupId>
