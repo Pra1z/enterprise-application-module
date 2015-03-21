@@ -11,12 +11,13 @@ import com.pratz.logic.service.IService;
 import com.pratz.logic.service.Imethod;
 
 @Controller
-@RequestMapping("/Test")
+@RequestMapping("/OTH999999")
 public class HomeController extends AbstractController {
 
 	
 	@Autowired
 	private Imethod imethod;
+	
 	@RequestMapping(value = {"/","/Test/"}, method = RequestMethod.GET)
 	public String home(Model model) {
 		logger.debug("Home Controller {}",imethod.method1());
