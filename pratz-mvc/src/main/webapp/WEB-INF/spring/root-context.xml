@@ -22,4 +22,5 @@
 		<property name="fallbackToSystemLocale" value="false" />
 	</bean>
 	<import resource="database.xml" />
+
 </beans>
