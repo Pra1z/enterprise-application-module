@@ -13,6 +13,7 @@
 	
 		<module>../pratz-dao</module>
 		<module>../pratz-mvc</module>
+		<module>../pratz-logic</module>
 	</modules>
 
 	<properties>
