@@ -1,1 +1,1 @@
-java -jar mybatis-generator-core-1.3.2.jar -configfile generatorConfig.xml -verbose -overwrite
+java -jar mybatis-generator-core-1.3.2-SNAPSHOT.jar -configfile generatorConfig.xml -verbose -overwrite
