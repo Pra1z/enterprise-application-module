@@ -1,20 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" ?><!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
-<generatorConfiguration >
-<classPathEntry location="D:/hsqldb/lib/hsqldb.jar" />
-  <context id="context1" targetRuntime="MyBatis3" >
-  	<plugin type="org.mybatis.generator.plugins.RenameExampleClassPlugin">
-    	<property name="searchString" value="Example"></property>
-    	<property name="replaceString" value="Condition"></property>
-    </plugin>
-    <jdbcConnection driverClass="org.hsqldb.jdbcDriver" connectionURL="jdbc:hsqldb:hsql://localhost/pratzdb" userId="pratz" password="pratz" />
-    <javaModelGenerator targetPackage="com.pratz.dao.table.model" targetProject="D:/Workspaces/2015_/t/src/main/java"/>
-    <sqlMapGenerator targetPackage="com.pratz.dao.table.mapper" targetProject="D:/Workspaces/2015_/t/src/main/resources" />
-    <javaClientGenerator targetPackage="com.pratz.dao.table.mapper" targetProject="D:/Workspaces/2015_/t/src/main/java" type="XMLMAPPER">
-     <property name="enableSubPackages" value="false" />
-    </javaClientGenerator>
-      <table schema="public" tableName="%" >
-      
-    </table>
-    
-  </context>
+<generatorConfiguration>
+	<classPathEntry location="D:/hsqldb/lib/hsqldb.jar" />
+	<context id="hsqldb" targetRuntime="MyBatis3">
+		<plugin type="org.mybatis.generator.plugins.RenameExampleClassPlugin">
+			<property name="searchString" value="Example"></property>
+			<property name="replaceString" value="Condition"></property>
+		</plugin>
+		<plugin type="org.mybatis.generator.plugins.EqualsHashCodePlugin"></plugin>
+		<plugin type="org.mybatis.generator.plugins.RowBoundsPlugin"></plugin>
+		<plugin type="org.mybatis.generator.plugins.SerializablePlugin">
+			<property name="suppressJavaInterface" value="false" />
+		</plugin>
+		<commentGenerator>
+			<property name="suppressAllComments" value="true" />
+		</commentGenerator>
+		<jdbcConnection driverClass="org.hsqldb.jdbcDriver"
+			connectionURL="jdbc:hsqldb:hsql://localhost/pratzdb" userId="pratz"
+			password="pratz" />
+		<javaModelGenerator targetPackage="com.pratz.dao.table.model"
+			targetProject="D:/Workspaces/2015_/pratz-dao/src/main/java" />
+		<sqlMapGenerator targetPackage="com.pratz.dao.table.mapper"
+			targetProject="D:/Workspaces/2015_/pratz-dao/src/main/resources">
+		</sqlMapGenerator>
+		<javaClientGenerator targetPackage="com.pratz.dao.table.mapper"
+			targetProject="D:/Workspaces/2015_/pratz-dao/src/main/java" type="XMLMAPPER">
+			<property name="enableSubPackages" value="false" />
+		</javaClientGenerator>
+
+		<table schema="public" tableName="%">
+
+		</table>
+
+	</context>
 </generatorConfiguration>
