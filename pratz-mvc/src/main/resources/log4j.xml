@@ -13,7 +13,7 @@
 	</appender>
 	
 	<!-- Application Loggers -->
-	<logger name="com.pratz.mvc">
+	<logger name="com.pratz">
 		<level value="debug" />
 	</logger>
 	<logger name="com.pratz.common">
@@ -22,7 +22,7 @@
 	<logger name="org.springframework">
 		<level value="error" />
 	</logger>
-	<!-- 3rdparty Loggers 
+	<!-- 3rdparty Loggers -->
 	<logger name="org.springframework.core">
 		<level value="error" />
 	</logger>
@@ -38,7 +38,7 @@
 	<logger name="org.springframework.web">
 		<level value="error" />
 	</logger>
--->
+
 
 
 	<!-- Root Logger -->
