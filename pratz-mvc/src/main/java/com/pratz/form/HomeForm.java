@@ -1,9 +1,11 @@
 package com.pratz.form;
 
+import org.hibernate.validator.constraints.NotBlank;
+
 public class HomeForm {
-	
+	@NotBlank
 	private String homeName;
-	
+	@NotBlank
 	private String homeNumber;
 	
 	public String getHomeName() {
