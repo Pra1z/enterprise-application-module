@@ -11,7 +11,18 @@
 			<param name="ConversionPattern" value="%-5p: %c - %m%n" />
 		</layout>
 	</appender>
-	
+	<!--  
+	 <appender name="debug" class="org.apache.log4j.DailyRollingFileAppender">
+        <param name="DatePattern" value="'.'yyyy-MM-dd" />
+        <param name="File" value="D:/logs/debug.log" />
+        <param name="Append" value="true" />
+        <param name="Encoding" value="UTF-8" />
+        <param name="Threshold" value="debug" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%-5p: %c - %m%n" />
+        </layout>
+    </appender>
+	-->
 	<!-- Application Loggers -->
 	<logger name="com.pratz">
 		<level value="debug" />
@@ -44,6 +55,7 @@
 	<!-- Root Logger -->
 	<root>
 		<priority value="error" />
+		
 		<appender-ref ref="console" />
 	</root>
 	
