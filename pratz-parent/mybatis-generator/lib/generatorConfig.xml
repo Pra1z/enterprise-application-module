@@ -27,8 +27,9 @@
 			<property name="enableSubPackages" value="false" />
 		</javaClientGenerator>
 
-		<table schema="public" tableName="%">
-
+		<table schema="public" tableName="%"  >
+	 <property name="useActualColumnNames" value="true"/> 
+	
 		</table>
 
 	</context>

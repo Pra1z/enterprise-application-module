@@ -6,16 +6,12 @@
 	<version>0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>pratz-parent</name>
-
 	<description>enterprise application module(parent)</description>
-
 	<modules>
-	
 		<module>../pratz-dao</module>
 		<module>../pratz-mvc</module>
 		<module>../pratz-logic</module>
 	</modules>
-
 	<properties>
 		<maven.compiler.target>1.6</maven.compiler.target>
 		<maven.compiler.source>1.6</maven.compiler.source>
@@ -47,7 +43,6 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
-			
 			 <dependency>
                 <groupId>org.springframework.security</groupId>
                 <artifactId>spring-security-bom</artifactId>
@@ -55,9 +50,6 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-			
-			 
-			
 			<dependency>
 			<groupId>org.mybatis</groupId>
 			<artifactId>mybatis</artifactId>
@@ -120,6 +112,7 @@
                 <artifactId>hibernate-validator</artifactId>
                 <version>4.3.1.Final</version>
             </dependency>
+            
 		<!-- Logging -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -162,12 +155,14 @@
 			</exclusions>
 			<scope>runtime</scope>
 		</dependency>
+		
 		<!-- @Inject -->
 		<dependency>
 			<groupId>javax.inject</groupId>
 			<artifactId>javax.inject</artifactId>
 			<version>1</version>
 		</dependency>
+		
 		<!-- Test -->
 		<dependency>
 			<groupId>junit</groupId>
@@ -177,5 +172,4 @@
 		</dependency>
 		</dependencies>
 	</dependencyManagement>
-
 </project>
