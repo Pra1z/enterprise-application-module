@@ -22,7 +22,7 @@ while (e.hasMoreElements()) {
 %>
 <form:form method="POST" action="${pageContext.request.contextPath}/OTH999999/process/" commandName="homeForm" >
 <form:errors path="*"/>
-<h1>Home</h1>
+<h1><c:out value="sectionCode: ${requestScope['sections']}"/></h1>
 <img src="${pageContext.request.contextPath}/resources/img/Test.jpg" />
 <div id="messages">
 	<c:if test="${not empty error}">

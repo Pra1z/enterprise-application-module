@@ -7,7 +7,6 @@ import java.util.Enumeration;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -18,7 +17,6 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.pratz.common.AbstractController;
 import com.pratz.form.HomeForm;
-import com.pratz.logic.service.Imethod;
 
 @Controller
 @RequestMapping("/OTH999999")
@@ -26,18 +24,16 @@ public class HomeController extends AbstractController {
 	
 	
 	
-	@Autowired
-	private Imethod imethod;
+	
 
-	@RequestMapping(value = { "/", "/OTH999999/" }, method = RequestMethod.GET)
+	
+	@RequestMapping( method = RequestMethod.GET)
 	public String home(Model model) {
-		logger.debug("Home Controller {}", imethod.method1());
 		return "home";
 	}
 
 	@RequestMapping(value = { "/process", "/process/" }, method = RequestMethod.POST)
 	public String home1(@Valid @ModelAttribute HomeForm homeForm, BindingResult result, Model model,RedirectAttributes ra) {
-		logger.error("Home Controller {}", imethod.method1());
 		
 		if(result.hasErrors()){
 			model.addAttribute("error", "error");
