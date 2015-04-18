@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.pratz.logic.query.TestMapper" >
+ <resultMap id="BaseResultMap" type="com.pratz.dao.table.model.TMSection" >
+    <id column="SECTIONCODE" property="sectioncode" jdbcType="VARCHAR" />
+    <result column="SECTIONNAME" property="sectionname" jdbcType="VARCHAR" />
+    <result column="DELETEDDATE" property="deleteddate" jdbcType="TIMESTAMP" />
+  </resultMap>
+<select id="test" resultMap="BaseResultMap" parameterType="map">
+	select * from T_MS_SECTION;
+</select>
+</mapper>
